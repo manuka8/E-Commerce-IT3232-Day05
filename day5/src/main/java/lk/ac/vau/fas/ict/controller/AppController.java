@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import lk.ac.vau.fas.ict.model.Student;
@@ -19,7 +20,6 @@ import lk.ac.vau.fas.ict.model.Student;
 @RestController
 @RequestMapping("/app")
 public class AppController {
-	//create some student object
 	Student s1 = new Student("2020ICT121","Joe",29,"IT",2.82);
 	Student s2 = new Student("2020ICT43","Manuka",24,"IT",3.86);
 	Student s3 = new Student("2020CS08","Palavi",22,"AMC",3.1);
@@ -69,7 +69,6 @@ public class AppController {
 	{
 		return mstudents;
 	}
-	
 	@GetMapping("/students/{regNo}")
 	public Student getStudentsReg(@PathVariable("regNo") String regNo )
 	{
@@ -115,12 +114,13 @@ public class AppController {
 	}
 	
 	@GetMapping("/findage")
-	public Student getStudentAge(int age)
-	{
-		
-			return null; 
-	}
-	
-	
-
+public List<Student> getStudentByAge(@RequestParam int age) {
+    List<Student> result = new ArrayList<>();
+    for (Student s : mstudents.values()) {
+        if (s.getAge() == age) {
+            result.add(s);
+        }
+    }
+    return result;
+}
 }
