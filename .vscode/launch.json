@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-Day5Application<day5>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "lk.ac.vau.fas.ict.Day5Application",
+            "projectName": "day5",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
