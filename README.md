@@ -61,20 +61,14 @@ This is a simple Spring Boot REST API for managing student records. The API prov
 
 ## Screenshots
 
-1. **Basic Message Endpoint**  
-   ![GET /app/msg](screenshots/get_msg.png)
+1. **Get All Students**  
+   ![GET /app/students](https://github.com/manuka8/E-Commerce-IT3232-Day05/blob/main/screenshots/Screenshot%202025-05-19%20074801.png)
 
-2. **Get All Students**  
-   ![GET /app/students](screenshots/get_all_students.png)
+2. **Get Student by Registration Number**  
+   ![GET /app/students/{regNo}](https://github.com/manuka8/E-Commerce-IT3232-Day05/blob/main/screenshots/Screenshot%202025-05-19%20075440.png)
 
-3. **Get Student by Registration Number**  
-   ![GET /app/students/{regNo}](screenshots/get_student_by_id.png)
-
-4. **Add New Student**  
-   ![POST /app/add](screenshots/post_add_student.png)
-
-5. **Find Students by Age**  
-   ![GET /app/findage?age=24](screenshots/get_students_by_age.png)
+3. **Find Students by Age**  
+   ![GET /app/findage?age=24](https://github.com/manuka8/E-Commerce-IT3232-Day05/blob/main/screenshots/Screenshot%202025-05-19%20082345.png)
 
 ## How to Run
 
